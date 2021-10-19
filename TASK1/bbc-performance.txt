@@ -1,0 +1,485 @@
+***************************************************************************
+
+(a) MultinomialNB default values, try 1
+
+***************************************************************************
+
+(b) CONFUSION MATIRX
+
+ 99       0       3       0       2
+  0      72       1       0       0
+  0       0      86       0       0
+  0       0       1      98       0
+  0       0       0       0      83
+
+
+***************************************************************************
+
+(c) CLASSIFICATION REPORT
+
+               precision    recall  f1-score   support
+
+     business       1.00      0.95      0.98       104
+entertainment       1.00      0.99      0.99        73
+     politics       0.95      1.00      0.97        86
+        sport       1.00      0.99      0.99        99
+         tech       0.98      1.00      0.99        83
+
+     accuracy                           0.98       445
+    macro avg       0.98      0.99      0.98       445
+ weighted avg       0.98      0.98      0.98       445
+
+
+***************************************************************************
+
+(d)
+
+ACCURACY = 98.43%
+
+MACRO-AVERAGE F1 = 0.98
+
+WEIGHTED-AVERAGE F1 = 0.98
+
+
+***************************************************************************
+
+(e) PRIORS
+
+{'business': 510, 'entertainment': 386, 'politics': 417, 'sport': 511, 'tech': 401}
+
+TOTAL = 2225
+
+BUSINESS PRIOR = 0.23
+
+ENTERTAINMENT PRIOR = 0.17
+
+POLITICS PRIOR = 0.19
+
+SPORT PRIOR = 0.23
+
+TECH PRIOR = 0.18
+
+
+***************************************************************************
+
+(f) VOCABULARY SIZE
+
+When we used the Countvectorizer, it did not take duplicates.
+We ended up with an array where the rows represented the documents and the columns represented the words.
+Therefore, in order to calculate the size of the vocabulary, we count how many columns the array has.
+
+VOCABULARY SIZE = 29421
+
+
+***************************************************************************
+
+(g) NUMBER OF WORD-TOKENS IN EACH CLASS
+
+BUSINESS = 164663
+
+ENTERTAINMENT = 124893
+
+POLITICS = 185208
+
+SPORTS = 162953
+
+TECH = 198640
+
+
+***************************************************************************
+
+(h) NUMBER OF WORD-TOKENS IN THE ENTIRE CORPUS
+
+COUNT = 836357
+
+
+***************************************************************************
+
+(i) NUMBER AND PERCENTAGE OF WORD | FRENQUENCY = 0, FOR EACH CLASS
+
+BUSINESS = 14911248 --> 99.38%
+
+ENTERTAINMENT = 11286545 --> 99.38%
+
+POLITICS = 12174005 --> 99.23%
+
+SPORTS = 14942521 --> 99.39%
+
+TECH = 11698152 --> 99.16%
+
+***************************************************************************
+
+(j) NUMBER AND PERCENTAGE OF WORD | FRENQUENCY = 1
+
+COUNT = 319824 --> 0.49%
+
+***************************************************************************
+
+(k) FAV WORDS
+
+1. royal (index: 22865) --> log_prob = -4.13
+
+2. scottish (index: 23400) --> log_prob = -3.78
+
+###############################################################################################################
+
+***************************************************************************
+
+(a) MultinomialNB default values, try 2
+
+***************************************************************************
+
+(b) CONFUSION MATIRX
+
+ 99       0       3       0       2
+  0      72       1       0       0
+  0       0      86       0       0
+  0       0       1      98       0
+  0       0       0       0      83
+
+
+***************************************************************************
+
+(c) CLASSIFICATION REPORT
+
+               precision    recall  f1-score   support
+
+     business       1.00      0.95      0.98       104
+entertainment       1.00      0.99      0.99        73
+     politics       0.95      1.00      0.97        86
+        sport       1.00      0.99      0.99        99
+         tech       0.98      1.00      0.99        83
+
+     accuracy                           0.98       445
+    macro avg       0.98      0.99      0.98       445
+ weighted avg       0.98      0.98      0.98       445
+
+
+***************************************************************************
+
+(d)
+
+ACCURACY = 98.43%
+
+MACRO-AVERAGE F1 = 0.98
+
+WEIGHTED-AVERAGE F1 = 0.98
+
+***************************************************************************
+
+(e) PRIORS
+
+{'business': 510, 'entertainment': 386, 'politics': 417, 'sport': 511, 'tech': 401}
+
+TOTAL = 2225
+
+BUSINESS PRIOR = 0.23
+
+ENTERTAINMENT PRIOR = 0.17
+
+POLITICS PRIOR = 0.19
+
+SPORT PRIOR = 0.23
+
+TECH PRIOR = 0.18
+
+***************************************************************************
+
+(f) VOCABULARY SIZE
+
+When we used the Countvectorizer, it did not take duplicates.
+We ended up with an array where the rows represented the documents and the columns represented the words.
+Therefore, in order to calculate the size of the vocabulary, we count how many columns the array has.
+
+VOCABULARY SIZE = 29421
+
+***************************************************************************
+
+(g) NUMBER OF WORD-TOKENS IN EACH CLASS
+
+BUSINESS = 164663
+
+ENTERTAINMENT = 124893
+
+POLITICS = 185208
+
+SPORTS = 162953
+
+TECH = 198640
+
+***************************************************************************
+
+(h) NUMBER OF WORD-TOKENS IN THE ENTIRE CORPUS
+
+COUNT = 836357
+
+***************************************************************************
+
+(i) NUMBER AND PERCENTAGE OF WORD | FRENQUENCY = 0, FOR EACH CLASS
+
+BUSINESS = 14911248 --> 99.38%
+
+ENTERTAINMENT = 11286545 --> 99.38%
+
+POLITICS = 12174005 --> 99.23%
+
+SPORTS = 14942521 --> 99.39%
+
+TECH = 11698152 --> 99.16%
+
+***************************************************************************
+
+(j) NUMBER AND PERCENTAGE OF WORD | FRENQUENCY = 1
+
+COUNT = 319824 --> 0.49%
+
+***************************************************************************
+
+(k) FAV WORDS
+
+1. royal (index: 22865) --> log_prob = -4.13
+
+2. scottish (index: 23400) --> log_prob = -3.78
+
+###############################################################################################################
+
+***************************************************************************
+
+(a) MultinomialNB default values, smoothing = 0.0001
+
+***************************************************************************
+
+(b) CONFUSION MATIRX
+
+101       0       1       0       2
+  0      72       0       0       1
+  0       0      86       0       0
+  0       0       1      98       0
+  0       0       0       0      83
+
+
+***************************************************************************
+
+(c) CLASSIFICATION REPORT
+
+               precision    recall  f1-score   support
+
+     business       1.00      0.97      0.99       104
+entertainment       1.00      0.99      0.99        73
+     politics       0.98      1.00      0.99        86
+        sport       1.00      0.99      0.99        99
+         tech       0.97      1.00      0.98        83
+
+     accuracy                           0.99       445
+    macro avg       0.99      0.99      0.99       445
+ weighted avg       0.99      0.99      0.99       445
+
+
+***************************************************************************
+
+(d)
+
+ACCURACY = 98.88%
+
+MACRO-AVERAGE F1 = 0.99
+
+WEIGHTED-AVERAGE F1 = 0.99
+
+***************************************************************************
+
+(e) PRIORS
+
+{'business': 510, 'entertainment': 386, 'politics': 417, 'sport': 511, 'tech': 401}
+
+TOTAL = 2225
+
+BUSINESS PRIOR = 0.23
+
+ENTERTAINMENT PRIOR = 0.17
+
+POLITICS PRIOR = 0.19
+
+SPORT PRIOR = 0.23
+
+TECH PRIOR = 0.18
+
+***************************************************************************
+
+(f) VOCABULARY SIZE
+
+When we used the Countvectorizer, it did not take duplicates.
+We ended up with an array where the rows represented the documents and the columns represented the words.
+Therefore, in order to calculate the size of the vocabulary, we count how many columns the array has.
+
+VOCABULARY SIZE = 29421
+
+***************************************************************************
+
+(g) NUMBER OF WORD-TOKENS IN EACH CLASS
+
+BUSINESS = 164663
+
+ENTERTAINMENT = 124893
+
+POLITICS = 185208
+
+SPORTS = 162953
+
+TECH = 198640
+
+***************************************************************************
+
+(h) NUMBER OF WORD-TOKENS IN THE ENTIRE CORPUS
+
+COUNT = 836357
+
+***************************************************************************
+
+(i) NUMBER AND PERCENTAGE OF WORD | FRENQUENCY = 0, FOR EACH CLASS
+
+BUSINESS = 14911248 --> 99.38%
+
+ENTERTAINMENT = 11286545 --> 99.38%
+
+POLITICS = 12174005 --> 99.23%
+
+SPORTS = 14942521 --> 99.39%
+
+TECH = 11698152 --> 99.16%
+
+***************************************************************************
+
+(j) NUMBER AND PERCENTAGE OF WORD | FRENQUENCY = 1
+
+COUNT = 319824 --> 0.49%
+
+***************************************************************************
+
+(k) FAV WORDS
+
+1. royal (index: 22865) --> log_prob = -4.13
+
+2. scottish (index: 23400) --> log_prob = -3.78
+
+###############################################################################################################
+
+***************************************************************************
+
+(a) MultinomialNB default values, smoothing = 0.9
+
+***************************************************************************
+
+***************************************************************************
+
+(b) CONFUSION MATIRX
+
+100       0       2       0       2
+  0      72       1       0       0
+  0       0      86       0       0
+  0       0       1      98       0
+  0       0       0       0      83
+
+
+***************************************************************************
+
+(c) CLASSIFICATION REPORT
+
+               precision    recall  f1-score   support
+
+     business       1.00      0.96      0.98       104
+entertainment       1.00      0.99      0.99        73
+     politics       0.96      1.00      0.98        86
+        sport       1.00      0.99      0.99        99
+         tech       0.98      1.00      0.99        83
+
+     accuracy                           0.99       445
+    macro avg       0.99      0.99      0.99       445
+ weighted avg       0.99      0.99      0.99       445
+
+
+***************************************************************************
+
+(d)
+
+ACCURACY = 98.65%
+
+MACRO-AVERAGE F1 = 0.99
+
+WEIGHTED-AVERAGE F1 = 0.99
+
+***************************************************************************
+
+(e) PRIORS
+
+{'business': 510, 'entertainment': 386, 'politics': 417, 'sport': 511, 'tech': 401}
+
+TOTAL = 2225
+
+BUSINESS PRIOR = 0.23
+
+ENTERTAINMENT PRIOR = 0.17
+
+POLITICS PRIOR = 0.19
+
+SPORT PRIOR = 0.23
+
+TECH PRIOR = 0.18
+
+***************************************************************************
+
+(f) VOCABULARY SIZE
+
+When we used the Countvectorizer, it did not take duplicates.
+We ended up with an array where the rows represented the documents and the columns represented the words.
+Therefore, in order to calculate the size of the vocabulary, we count how many columns the array has.
+
+VOCABULARY SIZE = 29421
+
+***************************************************************************
+
+(g) NUMBER OF WORD-TOKENS IN EACH CLASS
+
+BUSINESS = 164663
+
+ENTERTAINMENT = 124893
+
+POLITICS = 185208
+
+SPORTS = 162953
+
+TECH = 198640
+
+***************************************************************************
+
+(h) NUMBER OF WORD-TOKENS IN THE ENTIRE CORPUS
+
+COUNT = 836357
+
+***************************************************************************
+
+(i) NUMBER AND PERCENTAGE OF WORD | FRENQUENCY = 0, FOR EACH CLASS
+
+BUSINESS = 14911248 --> 99.38%
+
+ENTERTAINMENT = 11286545 --> 99.38%
+
+POLITICS = 12174005 --> 99.23%
+
+SPORTS = 14942521 --> 99.39%
+
+TECH = 11698152 --> 99.16%
+
+***************************************************************************
+
+(j) NUMBER AND PERCENTAGE OF WORD | FRENQUENCY = 1
+
+COUNT = 319824 --> 0.49%
+
+***************************************************************************
+
+(k) FAV WORDS
+
+1. royal (index: 22865) --> log_prob = -4.13
+
+2. scottish (index: 23400) --> log_prob = -3.78
+

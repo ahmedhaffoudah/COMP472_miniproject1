@@ -1,0 +1,8 @@
+DISCUSSION
+
+(a)
+As seen in the histogram of BBC-distribution.pdf, the data is relatively equally distributed. That being said, and because all classes are of equal importance, all the metrics will be a good evaluation of the performance of our model. In fact, we can see that in our classification report. However, since accuracy is the simplest metric to calculate, we can choose it as the best suited metric to this dataset.
+
+(b)
+The performance of step (8) is the same of step (7). In fact, in step (8), we did not change anything, we just ran the same model again with the same inputs. As for steps (9) and (10), the performances did change. We saw an increase in the metrics. This is due to the fact that we reduced the smoothing value and hence, reduced the effect it has all while getting rid of our 0s. 
+Indeed, we can see that by slightly reducing the smoothing value from 1 to 0.9, we managed to increase the accuracy of the model by 1%. This is due to the large number of word-tokens (836357). However, when we decreased the smoothing value even further (0.0001), we only saw a small increase in the accuracy.

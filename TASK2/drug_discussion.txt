@@ -1,0 +1,3 @@
+DISCUSSION
+
+When running a model repeatedly with the same training and test set, it is normal that the performance does not change. Since we are not changing any hyperparameters nor are we changing the dataset or the data split, we are not changing anything really. Let us take the example of a decision tree.  If we have already built our decision tree and chose all the nodes, no matter how many times we repeat the execution of the same test set, we will always get the same results. It is like computing the same function with the same input and expecting a different output.
