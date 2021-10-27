@@ -8,6 +8,4 @@ To run the code, please download TASK1 and TASK2 directories. Open the miniconda
 
 You should then see a bunch of cells. Click on the first one on the top and click 'shift+enter' until you run all the cells.
 
-Ahmed Haffoudah 40095428
-Badr Saidi 40098327
-Kevin Ghannoum 40088808
+Ahmed Haffoudah 40095428 | Badr Saidi 40098327 | Kevin Ghannoum 40088808
